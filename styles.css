@@ -118,7 +118,7 @@ div.button:hover {
     display: inline-block;
     white-space: nowrap;
     padding-right: 100%;
-    animation-iteration-count: infinite;
+    animation-iteration-count: infinite;file:///home/benfedoruk/Code/html/personalwebsite/index.html
     animation-timing-function: linear;
     animation-name: ticker;
     animation-duration: 20s;
