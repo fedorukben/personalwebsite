@@ -43,26 +43,11 @@ div.sectiontitle {
 div.pagetitle {
     background-color: #8B2635;
     font-size: 45px;
-    margin-top: 3%;
-    margin-right: 3%;
-    margin-left: 13%;
+    margin-top: 0.75%;
+    margin-left: 20%;
+    margin-right: 20%;
     padding: 0.5%;
     white-space: nowrap;
-}
-div.back {
-    background-color: #171738;
-    font-size: 45px;
-    margin-top: -58px;
-    margin-left: 3%;
-    margin-right: 90%;
-    padding: 0.5%;
-    height: 50px;
-    width: 50px;
-    transition: 0.3s;
-}
-div.back:hover {
-    background-color: #FFF3B0;
-    color: #171738;
 }
 div.section {
     background-color: #8B2635;
@@ -94,6 +79,30 @@ div.button {
     transition: 0.3s;
 }
 div.button:hover {
+    background-color: #FFF3B0;
+    color: #171738;
+}
+div.crumbtrail {
+    background-color: #B9314F;
+    width: 98.5%;
+    margin-left: 1.5%;
+    margin-top: 0.75%;
+    border-radius: 0px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    white-space: nowrap;
+    text-align: left;
+}
+div.crumb {
+    background-color: #171738;
+    width: 12.5%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    border-radius: 10px;
+    margin-right: 0.75%;
+    float: left;
+}
+div.crumb:hover {
     background-color: #FFF3B0;
     color: #171738;
 }
