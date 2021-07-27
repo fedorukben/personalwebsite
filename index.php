@@ -8,8 +8,9 @@
 		</title>
 	</head>
 	<body>
-		<!--vvv GENERIC HEADER vvv-->
-		<div class="header">
+		<?php include("includes/header.html");?>
+		<!-- vvv GENERIC HEADER vvv-->
+		<!-- <div class="header">
 			Benjamin D. Fedoruk
 		</div>
 		<div class="subheader">
@@ -35,8 +36,8 @@
 					</div>
 				</div>
 			</div>
-		</div>
-		<!--^^^ GENERIC HEADER ^^^-->
+		</div> -->
+		<!--^^^ GENERIC HEADER ^^^ -->
 		<div class="sectiontitle">
 			About Me
 		</div>
