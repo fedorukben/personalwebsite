@@ -8,10 +8,11 @@
 		</title>
 	</head>
 	<body>
-		<?php include("includes/header.html");?>
-		<!-- vvv GENERIC HEADER vvv-->
-		<!-- <div class="header">
+		<?php include('header.php'); ?>
+		<!--vvv GENERIC HEADER vvv-->
+		<div class="header">
 			Benjamin D. Fedoruk
+			<img src='favicon.png' class='logo'>
 		</div>
 		<div class="subheader">
 			Aspiring Polymath. Youth Advocate. Thinker. 
@@ -36,8 +37,8 @@
 					</div>
 				</div>
 			</div>
-		</div> -->
-		<!--^^^ GENERIC HEADER ^^^ -->
+		</div>
+		<!--^^^ GENERIC HEADER ^^^-->
 		<div class="sectiontitle">
 			About Me
 		</div>
