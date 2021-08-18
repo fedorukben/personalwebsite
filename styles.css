@@ -104,6 +104,22 @@ div.button:hover {
     background-color: #FFF3B0;
     color: #171738;
 }
+div.long-button {
+    float: left;
+    display: inline-block;
+    width: 96.5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-size: 30px;
+    margin-left: 1.75%;
+    margin-right: 1.75%;
+    background-color: #171738;
+    transition: 0.3s;
+}
+div.long-button:hover {
+    background-color: #FFF3B0;
+    color: #171738;
+}
 div.crumbtrail {
     background-color: #B9314F;
     width: 98.5%;
