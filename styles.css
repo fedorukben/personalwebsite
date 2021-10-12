@@ -88,6 +88,14 @@ div.container {
     overflow-y: hidden;
     white-space: nowrap;
 }
+div.dense-container {
+	margin-top: 1%;
+	margin-left: 3%;
+	margin-right: 3%;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	white-space: nowrap;
+}
 div.button {
     float: left;
     display: inline-block;
