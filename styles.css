@@ -1,3 +1,8 @@
+:root {
+	--window-width: 100vh;
+	--top-tri-height: 100vh / 2;
+}
+
 /* ENTIRE DOC */
 html, body {
     background-color: #B9314F;
@@ -25,8 +30,10 @@ iframe.generic-header {
     top: 0px;
     left: 0px;
     width: 100%;
-    height: 7%;
+    /*height: 7%;*/
     border: 0;
+    position: relative;
+    z-index: 1;
 }
 
 ul {
@@ -39,6 +46,17 @@ div {
    border-radius: 10px;
    font-size: 18px;
    text-align: center;
+}
+div.triangle {
+	border-left: 100vw solid transparent;
+	border-right: 100vw solid #171738;
+	border-bottom: var(--top-tri-height) solid transparent;
+	width: 0;
+	height: 0;
+	position: absolute;
+	right: 0px;
+	top: 9.65%;
+	border-radius: 0px;
 }
 div.header {
     background-color: #171738;
@@ -61,6 +79,24 @@ div.sectiontitle {
     margin-left: 30%;
     margin-right: 30%;
     padding: 0.5%;
+}
+div.diagonal-top-break {
+	margin-top: 2.2%;
+}
+div.diagonal-sectiontitle {
+    background-color: #8B2635;
+    font-size: 72px;
+    padding: 0.5%;
+    border-radius: 0px;
+}
+div.diagonal-sectiontitle-top {
+	background-color: #8B2635;
+	font-size: 72px;
+	padding: 0.5%;
+	position: relative;
+	z-index: 2;
+	border-radius: 0px;
+	border-top: 100px solid #F71738;
 }
 div.pagetitle {
     background-color: #8B2635;
@@ -87,6 +123,25 @@ div.container {
     overflow-x: hidden;
     overflow-y: hidden;
     white-space: nowrap;
+}
+div.diagonal-box-neg {
+	margin-top: 3%;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	white-space: nowrap;
+	border-radius: 0px;
+	transform: skewY(-7deg);
+}
+div.diagonal-box-pos {
+	overflow-x: hidden;
+	overflow-y: hidden;
+	white-space: nowrap;
+	border-radius: 0px;
+	transform: skewY(7deg);
+}
+div.diagonal-content {
+	max-width: 50em;
+	margin: 0 auto;
 }
 div.dense-container {
 	margin-top: 1%;
@@ -184,7 +239,6 @@ div.crumb:hover {
 .ticker-item{
     display: inline-block;
     padding: 0 2rem;
-}
 
 /*
 
