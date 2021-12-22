@@ -20,9 +20,9 @@ a {
 img.logo {
     position: absolute;
     top: 0px;
+    padding-top: 0.3%;
     right: 0px;
-    height: 80%;
-    width: 7%;
+    height: 60%;
     object-fit: fill;
 }
 
@@ -182,6 +182,21 @@ div.long-button {
 div.long-button:hover {
     background-color: #FFF3B0;
     color: #171738;
+}
+div.long-button-info {
+    background-color: #8B2635;
+    color: #FFF3B0;
+    float: left;
+    display: inline-block;
+    width: 92%;
+    padding-top: 0.5%;
+    padding-bottom: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    font-size: 16px;
+    margin-left: 3%;
+    margin-right: 3%;
+    border-radius: 0px 0px 10px 10px;
 }
 div.crumbtrail {
     background-color: #B9314F;
