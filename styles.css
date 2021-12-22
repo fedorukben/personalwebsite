@@ -107,6 +107,14 @@ div.pagetitle {
     padding: 0.5%;
     white-space: nowrap;
 }
+div.ciao {
+    margin-top: 0%;
+    margin-left: 3%;
+    margin-right: 3%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
 div.section {
     background-color: #8B2635;
     margin-top: 3%;
