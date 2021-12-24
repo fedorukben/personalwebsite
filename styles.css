@@ -58,6 +58,32 @@ div.triangle {
 	top: 9.65%;
 	border-radius: 0px;
 }
+div.grid-about-me {
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    grid-gap: 3% 3%;
+    margin-right: 3%;
+    justify-items: center;
+    align-items: center;
+}
+div.grid-about-me > div.section {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    font-size: 2vw;
+}
+div.grid-about-me > img {
+    width: 100%;
+    border: 1em solid #8B2635;
+}
+div.division {
+    background-color: #8B2635;
+    height: 8px;
+    border-radius: 0;
+    width: 100%;
+    margin-top: 1.5%;
+}
 div.header {
     background-color: #171738;
     height: 10%;
@@ -73,12 +99,13 @@ div.subheader {
     font-variant: small-caps;
 }
 div.sectiontitle {
-    background-color: #8B2635;
-    font-size: 30px;
+    background-color: #B9314F;
+    font-size: 48px;
     margin-top: 3%;
     margin-left: 30%;
     margin-right: 30%;
     padding: 0.5%;
+    font-weight: normal;
 }
 div.diagonal-top-break {
 	margin-top: 2.2%;
@@ -96,16 +123,17 @@ div.diagonal-sectiontitle-top {
 	position: relative;
 	z-index: 2;
 	border-radius: 0px;
-	border-top: 100px solid #F71738;
+	border-top: 100px solid #;
 }
 div.pagetitle {
-    background-color: #8B2635;
+    background-color: #B9314F;
     font-size: 45px;
     margin-top: 0.75%;
     margin-left: 20%;
     margin-right: 20%;
     padding: 0.5%;
     white-space: nowrap;
+    font-weight: bold;
 }
 div.ciao {
     margin-top: 0%;
