@@ -272,7 +272,8 @@ div.dropdown-content:hover {
 }
 div.dropdown-item {
     float: left;
-    display: inline-block;
+    display: inline-grid;
+    grid-template-columns: 2fr 1fr;
     width: 70%;
     padding-top: 0.5%;
     padding-bottom: 0.5%;
@@ -287,9 +288,19 @@ div.dropdown-item:hover {
     background-color: #FFF3B0;
     color: #171738;
 }
+div.dropdown-item > div.image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+div.dropdown-item > div.image > img {
+    height: 20px;
+}
 div.dropdown-item-last {
     float: left;
-    display: inline-block;
+    display: inline-grid;
+    grid-template-columns: 2fr 1fr;
     width: 70%;
     padding-top: 0.5%;
     padding-bottom: 0.5%;
@@ -303,6 +314,15 @@ div.dropdown-item-last {
 div.dropdown-item-last:hover {
     background-color: #FFF3B0;
     color: #171738;
+}
+div.dropdown-item-last > div.image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+div.dropdown-item-last > div.image > img {
+    height: 20px;
 }
 div.crumbtrail {
     background-color: #B9314F;
