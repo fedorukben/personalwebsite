@@ -239,6 +239,71 @@ div.long-button-info > div.section {
     margin: 0;
     padding: 0.5%;
 }
+div.dropdown {
+    margin-top: 1%;
+}
+div.dropdown-button {
+    float: left;
+    display: inline-block;
+    width: 96.5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-size: 30px;
+    margin-left: 1.75%;
+    margin-right: 1.75%;
+    background-color: #171738;
+    transition: 0.3s;
+}
+div.dropdown-button:hover {
+    background-color: #FFF3B0;
+    color: #171738;
+    margin-bottom: 0;
+}
+div.dropdown-button:hover + div.dropdown-content {
+    display: block;
+}
+div.dropdown-content {
+    display: none;
+    color: #8B2635;
+    transition: 0.3s;
+}
+div.dropdown-content:hover {
+    display: block;
+}
+div.dropdown-item {
+    float: left;
+    display: inline-block;
+    width: 70%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    font-size: 20px;
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: #171738;
+    transition: 0.3s;
+    border-radius: 0;
+}
+div.dropdown-item:hover {
+    background-color: #FFF3B0;
+    color: #171738;
+}
+div.dropdown-item-last {
+    float: left;
+    display: inline-block;
+    width: 70%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    font-size: 20px;
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: #171738;
+    transition: 0.3s;
+    border-radius: 0px 0px 10px 10px;
+}
+div.dropdown-item-last:hover {
+    background-color: #FFF3B0;
+    color: #171738;
+}
 div.crumbtrail {
     background-color: #B9314F;
     width: 98.5%;
