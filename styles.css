@@ -76,6 +76,7 @@ div.grid-about-me > div.section {
 div.grid-about-me > img {
     width: 100%;
     border: 1em solid #8B2635;
+    border-radius: 10px;
 }
 div.division {
     background-color: #8B2635;
@@ -233,6 +234,10 @@ div.long-button-info {
     margin-left: 3%;
     margin-right: 3%;
     border-radius: 0px 0px 10px 10px;
+}
+div.long-button-info > div.section {
+    margin: 0;
+    padding: 0.5%;
 }
 div.crumbtrail {
     background-color: #B9314F;
