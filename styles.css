@@ -95,7 +95,7 @@ div.header {
 }
 div.subheader {
     background-color: #171738;
-    height: 25px;
+    height: 20px;
     border-radius: 0px;
     font-variant: small-caps;
 }
@@ -324,6 +324,74 @@ div.dropdown-item-last > div.image {
 div.dropdown-item-last > div.image > img {
     height: 20px;
 }
+div.quicknav {
+    background-color: #171738;
+    border-radius: 0;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+}
+div.quicknav:hover {
+    background-color: #FFF3B0;
+    color: #171738;
+}
+div.quicknav:hover > a > div.quicklink {
+    display: block;
+}
+div.quicknav:hover > a > div.quickselector {
+    color: #171738;
+}
+div.quicknav:hover > a > div.quickselector:after {
+    content: "Home";
+}
+div.quicknav:hover > a > div.quickselector > span {
+    display: none;
+}
+div.quicklink {
+    display: none;
+    color: #FFF3B0;
+    background-color: #171738;
+    border-radius: 0;
+}
+div.quicklink:hover {
+    color: #171738;
+    background-color: #FFF3B0;
+}
+/*
+div.quicknav > div.quicknav-button {
+    font-size: 16px;
+    padding-top: 0.2%;
+    padding-bottom: 0.2%;
+    border-radius: 0;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+div.quicknav > div.quicknav-links {
+    position: absolute;
+}
+div.quicknav-button {
+    background-color: #171738;
+    color: #FFF3B0;
+}
+div.quicknav-button:hover + div.quicknav-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+div.quicknav-links:hover {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+}
+div.quicknav-links {
+    display: none;
+}
+div.quicknav-links > div.dropdown-item {
+    font-size: 16px;
+    flex-grow: 1;
+    margin: auto;
+}*/
 div.crumbtrail {
     background-color: #B9314F;
     width: 98.5%;
