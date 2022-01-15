@@ -22,18 +22,27 @@ img.logo {
     top: 0px;
     padding-top: 0.3%;
     right: 0px;
-    height: 60%;
+    height: 6vw;
     object-fit: fill;
+    margin-right: 1.5%;
 }
 
 iframe.generic-header {
     top: 0px;
     left: 0px;
     width: 100%;
-    /*height: 7%;*/
+    height: 175px;
     border: 0;
     position: relative;
     z-index: 1;
+}
+iframe.cv {
+    background-color: #B9314F;
+    margin-left: 23.5vw;
+    margin-right: 23.5vw;
+    width: 53vw;
+    height: 68.58823529vw;
+    /* Above is calculated by (11/8.5)*53vw for letter size props */
 }
 
 ul {
@@ -58,25 +67,60 @@ div.triangle {
 	top: 9.65%;
 	border-radius: 0px;
 }
-div.grid-about-me {
+div.grid-home-pane {
     display: grid;
-    grid-template-columns: 5fr 2fr;
+    grid-template-columns: 2fr 5fr;
     grid-gap: 3% 3%;
-    margin-right: 3%;
+    margin-left: 3%;
+    margin-bottom: 3%;
     justify-items: center;
     align-items: center;
 }
-div.grid-about-me > div.section {
+div.grid-home-pane > div.section {
     display: flex;
     justify-content: center;
     align-content: center;
     flex-direction: column;
     font-size: 2vw;
 }
-div.grid-about-me > img {
+div.grid-home-pane > img {
     width: 100%;
     border: 1em solid #8B2635;
     border-radius: 10px;
+
+}
+div.grid-home-alt {
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    grid-gap: 3% 3%;
+    margin-right: 3%;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 3%;
+}
+div.grid-home-alt > img {
+    width: 100%;
+    border-radius: 10px;
+    border: 1em solid #B9314F;
+}
+div.grid-home-alt > div.section {
+    background-color: #B9314F;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    font-size: 2vw;
+}
+div.phil-statement {
+    background-color: #8B2635;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-left: 3%;
+    margin-right: 3%;
+    font-weight: 100;
+    padding: 3%;
+    font-size: 1.5vw;
+    font-style: oblique;
 }
 div.division {
     background-color: #8B2635;
@@ -87,15 +131,14 @@ div.division {
 }
 div.header {
     background-color: #171738;
-    height: 10%;
     text-align: center;
-    font-size: 400%;
+    font-size: 4vw;
     border-radius: 0px;
     font-variant: small-caps;
 }
 div.subheader {
     background-color: #171738;
-    height: 20px;
+    font-size: 1.75vw;
     border-radius: 0px;
     font-variant: small-caps;
 }
@@ -143,6 +186,31 @@ div.ciao {
     overflow-x: hidden;
     overflow-y: hidden;
     white-space: nowrap;
+}
+div.home-pane {
+    background-color: #B9314F;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+    border-radius: 0;
+}
+div.home-pane > div.sectiontitle {
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+div.home-pane-alt {
+    background-color: #8B2635;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+    border-radius: 0;
+}
+div.home-pane-alt > div.sectiontitle {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    background-color: #8B2635;
 }
 div.section {
     background-color: #8B2635;
@@ -268,7 +336,7 @@ div.dropdown-content {
     transition: 0.3s;
 }
 div.dropdown-content:hover {
-    display: block;
+    display: flex;
 }
 div.dropdown-item {
     float: left;
@@ -440,7 +508,7 @@ div.crumb:hover {
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-name: ticker;
-    animation-duration: 36s; /* 6 seconds per ticker item */
+    animation-duration: 42s; /* 6 seconds per ticker item */
 }
 .ticker-move:hover{
     animation-play-state: paused;
@@ -448,6 +516,7 @@ div.crumb:hover {
 .ticker-item{
     display: inline-block;
     padding: 0 2rem;
+    font-size: 1vw;
 
 /*
 
@@ -455,5 +524,17 @@ Bright Maroon: #B9314F
 Medium Champagne: #FFF3B0
 Antique Ruby: #8B2635
 Space Cadet: #171738
+
+*/
+
+
+
+/*
+
+
+Old Mauve: #511F37
+Persian Indigo: #320D6D
+Ochre: #D17A22
+
 
 */
