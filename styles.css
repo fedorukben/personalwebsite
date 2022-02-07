@@ -22,7 +22,7 @@ img.logo {
     top: 0px;
     padding-top: 0.3%;
     right: 0px;
-    height: 6vw;
+    height: 50%;
     object-fit: fill;
     margin-right: 1.5%;
 }
@@ -131,13 +131,13 @@ div.division {
 div.header {
     background-color: #171738;
     text-align: center;
-    font-size: 4vw;
+    font-size: 400%;
     border-radius: 0px;
     font-variant: small-caps;
 }
 div.subheader {
     background-color: #171738;
-    font-size: 1.75vw;
+    font-size: 175%;
     border-radius: 0px;
     font-variant: small-caps;
 }
@@ -512,10 +512,13 @@ div.crumb:hover {
 .ticker-move:hover{
     animation-play-state: paused;
 }
+.ticker-move:hover > .ticker-wrap {
+    background-color: #FFF3B0;
+}
 .ticker-item{
     display: inline-block;
     padding: 0 2rem;
-    font-size: 1vw;
+    font-size: 10vh;
 
 /*
 
