@@ -177,6 +177,56 @@ div.footer-link:hover {
     background-color: var(--font-color);
     color: var(--backdrop-color);
 }
+div.full-menu-btn {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 77px;
+    height: 77px;
+    background-color: #171738;
+    z-index: 1;
+    transition: 0.3s;
+}
+div.full-menu-btn:hover {
+    background-color: #FFF3B0;
+}
+div.full-menu-btn:hover > div.full-menu-btn-line-1,
+div.full-menu-btn:hover > div.full-menu-btn-line-2,
+div.full-menu-btn:hover > div.full-menu-btn-line-3 {
+    background-color: #171738;
+}
+div.full-menu-btn-line-1 {
+    margin-top: 11px;
+    margin-bottom: 11px;
+    background-color: #FFF3B0;
+    z-index: 0;
+    position: fixed;
+    left: 11px;
+    width: 55px;
+    height: 11px;
+}
+div.full-menu-btn-line-2 {
+    margin-top: 11px;
+    margin-bottom: 11px;
+    background-color: #FFF3B0;
+    z-index: 0;
+    position: fixed;
+    left: 11px;
+    top: 22px;
+    width: 55px;
+    height: 11px;
+}
+div.full-menu-btn-line-3 {
+    margin-top: 11px;
+    margin-bottom: 11px;
+    background-color: #FFF3B0;
+    z-index: 0;
+    position: fixed;
+    left: 11px;
+    top: 44px;
+    width: 55px;
+    height: 11px;
+}
 div.header {
     background-color: #171738;
     text-align: center;
@@ -445,6 +495,7 @@ div.quicknav {
     border-radius: 0;
     display: grid;
     grid-template-columns: repeat(9, 1fr);
+    transition: 0.3s;
 }
 div.quicknav:hover {
     background-color: #FFF3B0;
@@ -574,12 +625,14 @@ div.ticker-item > a {
     padding-bottom: 3px;
     padding-left: 5px;
     padding-right: 5px;
+    transition: 0.3s;
 }
 div.ticker-item:hover > a {
     background-color: var(--font-color);
     color: var(--backdrop-color);
     border-radius: 8px;
 }
+
 /*
 
 Bright Maroon: #B9314F

@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #B9314F;
+    font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
+    font-size: 2em;
+}
+
+div.back {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 77px;
+    height: 77px;
+    background-color: #171738;
+    color: #FFF3B0;
+    z-index: 1;
+    transition: 0.3s;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 77px;
+    font-size: 50pt;
+    font-weight: bolder;
+    cursor: pointer;
+    padding-top: 10px;
+    border-radius: 10px;
+}
+div.back:hover {
+    background-color: #FFF3B0;
+    color: #171738;
+}
+
+ul.menu-item-hover {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+ul.menu-item-hover li {
+    list-style: none;
+    padding-top: 12px;
+}
+
+ul.menu-item-hover li:before {
+    content: attr(data-text);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff3B0;
+    font-size: 6em;
+    font-weight: 700;
+    pointer-events: none;
+    opacity: 0;
+    letter-spacing: 20px;
+    transition: 0.5s;
+    white-space: nowrap;
+}
+
+ul.menu-item-hover li:hover:before {
+    opacity: 0.05;
+    letter-spacing: 0px;
+}
+
+ul.menu-item-hover li a {
+    position: relative;
+    display: inline-block;
+    padding: 6px 15px;
+    text-decoration: none;
+    background: #171738;
+    color: #FFF3B0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    overflow: hidden;
+    transition: 0.5s;
+    z-index: 1;
+    border-radius: 10px;
+    min-width: 100%;
+    text-align: center;
+}
+
+ul.menu-item-hover:hover li a {
+    opacity: 0;
+}
+
+ul.menu-item-hover li a:hover {
+    transform: scale(2,2);
+    z-index: 1000;
+    background: #171738;
+    color: #FFF3B0;
+    opacity: 1;
+}
+
+ul.menu-item-hover li a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -125px;
+    width: 80px;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(256, 243, 176, 0.8), transparent);
+    transform: skew(35deg);
+    transition: 0s;
+}
+
+ul.menu-item-hover li a:hover:before {
+    left: calc(100% + 100px);
+    transition: 0.5s;
+    transition-delay: 0.2s;
+}
