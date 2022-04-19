@@ -599,7 +599,7 @@ div.section a {
 div.section a:hover {
     text-decoration: underline;
 }
-div.section a span.hovertip {
+div.section a div.hovertip {
     position: absolute;
     height: 37px;
     min-width: 150px;
@@ -616,16 +616,16 @@ div.section a span.hovertip {
     opacity: 0;
     pointer-events: none;
 }
-div.section a span.hovertip:hover {
+div.section a div.hovertip:hover {
     color: #171738;
     background-color: #FFF3B0
 }
-div.section a:hover span.hovertip {
+div.section a:hover div.hovertip {
     transform: translate(-50%, 0);
     opacity: 1;
     pointer-events: auto;
 }
-div.section a span.hovertip:before {
+div.section a div.hovertip:before {
     content: '';
     position: absolute;
     height: 15px;
@@ -636,7 +636,7 @@ div.section a span.hovertip:before {
     transform: translate(-50%) rotate(45deg);
     z-index: -1;
 }
-div.section a span.hovertip:hover:before {
+div.section a div.hovertip:hover:before {
     background: #FFF3B0;
 }
 
