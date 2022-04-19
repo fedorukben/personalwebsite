@@ -105,7 +105,8 @@ ul.menu-item-hover li a:before {
     left: -125px;
     width: 80px;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(256, 243, 176, 0.8), transparent);
+    /* background: linear-gradient(90deg, transparent, rgba(256, 243, 176, 0.8), transparent); */
+    background: linear-gradient(90deg, transparent, #8B2635, transparent);
     transform: skew(35deg);
     transition: 0s;
 }
