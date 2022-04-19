@@ -366,6 +366,7 @@ div.button {
     margin-right: 1.75%;
     background-color: #171738;
     transition: 0.3s;
+    cursor: pointer;
 }
 div.button:hover {
     background-color: #FFF3B0;
@@ -585,10 +586,58 @@ div.crumb {
     margin-right: 0.75%;
     float: left;
     font-size: 1.5vw;
+    cursor: pointer;
 }
 div.crumb:hover {
     background-color: #FFF3B0;
     color: #171738;
+}
+div.section a {
+    position: relative;
+    text-decoration: none;
+}
+div.section a:hover {
+    text-decoration: underline;
+}
+div.section a span.hovertip {
+    position: absolute;
+    height: 37px;
+    min-width: 150px;
+    color: #FFF3B0;
+    top: -37px;
+    left: 50%;
+    line-height: 37px;
+    text-align: center;
+    transform: translate(-40%, -20px);
+    background: #171738;
+    border-radius: 25px;
+    background: #171738;
+    transition: all 0.3 ease;
+    opacity: 0;
+    pointer-events: none;
+}
+div.section a span.hovertip:hover {
+    color: #171738;
+    background-color: #FFF3B0
+}
+div.section a:hover span.hovertip {
+    transform: translate(-50%, 0);
+    opacity: 1;
+    pointer-events: auto;
+}
+div.section a span.hovertip:before {
+    content: '';
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    background: #171738;
+    bottom: -6px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    z-index: -1;
+}
+div.section a span.hovertip:hover:before {
+    background: #FFF3B0;
 }
 
 /* NEWS */
