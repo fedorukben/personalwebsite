@@ -61,7 +61,7 @@ iframe.generic-footer {
     border: 0;
     padding: 0;
     margin-top: 10px;
-    position: relative;
+    position: absolute;
     z-index: 1;
     overflow: hidden;
 }
