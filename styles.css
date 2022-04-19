@@ -181,8 +181,8 @@ div.full-menu-btn {
     position: fixed;
     left: 0;
     top: 0;
-    width: 77px;
-    height: 77px;
+    width: 7vh;
+    height: 7vh;
     background-color: #171738;
     z-index: 1;
     transition: 0.3s;
@@ -196,36 +196,36 @@ div.full-menu-btn:hover > div.full-menu-btn-line-3 {
     background-color: #171738;
 }
 div.full-menu-btn-line-1 {
-    margin-top: 11px;
-    margin-bottom: 11px;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
     background-color: #FFF3B0;
     z-index: 0;
     position: fixed;
-    left: 11px;
-    width: 55px;
-    height: 11px;
+    left: 1vh;
+    width: 5vh;
+    height: 1vh;
 }
 div.full-menu-btn-line-2 {
-    margin-top: 11px;
-    margin-bottom: 11px;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
     background-color: #FFF3B0;
     z-index: 0;
     position: fixed;
-    left: 11px;
-    top: 22px;
-    width: 55px;
-    height: 11px;
+    left: 1vh;
+    top: 2vh;
+    width: 5vh;
+    height: 1vh;
 }
 div.full-menu-btn-line-3 {
-    margin-top: 11px;
-    margin-bottom: 11px;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
     background-color: #FFF3B0;
     z-index: 0;
     position: fixed;
-    left: 11px;
-    top: 44px;
-    width: 55px;
-    height: 11px;
+    left: 1vh;
+    top: 4vh;
+    width: 5vh;
+    height: 1vh;
 }
 div.header {
     background-color: #171738;
@@ -242,7 +242,7 @@ div.subheader {
 }
 div.sectiontitle {
     background-color: #B9314F;
-    font-size: 2.5vw;
+    font-size: 30px;
     margin-top: 3%;
     margin-left: 30%;
     margin-right: 30%;
@@ -360,7 +360,7 @@ div.button {
     width: 29.33%;
     padding-top: 1%;
     padding-bottom: 1%;
-    font-size: 30px;
+    font-size: 2vw;
     margin-left: 1.75%;
     margin-right: 1.75%;
     background-color: #171738;
@@ -497,6 +497,9 @@ div.quicknav {
     grid-template-columns: repeat(9, 1fr);
     transition: 0.3s;
 }
+div.quicknav > a > div.quickselector > span {
+    font-size: 1.5vw;
+}
 div.quicknav:hover {
     background-color: #FFF3B0;
     color: #171738;
@@ -506,6 +509,7 @@ div.quicknav:hover > a > div.quicklink {
 }
 div.quicknav:hover > a > div.quickselector {
     color: #171738;
+    font-size: 1.5vw;
 }
 div.quicknav:hover > a > div.quickselector:after {
     content: "Home";
@@ -518,6 +522,7 @@ div.quicklink {
     color: #FFF3B0;
     background-color: #171738;
     border-radius: 0;
+    font-size: 1.5vw
 }
 div.quicklink:hover {
     color: #171738;
