@@ -266,7 +266,7 @@ div.diagonal-sectiontitle-top {
 	position: relative;
 	z-index: 2;
 	border-radius: 0px;
-	border-top: 100px solid #;
+	/* border-top: 100px solid #; */
 }
 div.pagetitle {
     background-color: #B9314F;
@@ -357,7 +357,7 @@ div.dense-container {
 }
 div.button {
     float: left;
-    display: inline-block;
+    /* display: inline-block; */
     width: 29.33%;
     padding-top: 1%;
     padding-bottom: 1%;
@@ -373,7 +373,7 @@ div.button:hover {
 }
 div.long-button {
     float: left;
-    display: inline-block;
+    /* display: inline-block; */
     width: 96.5%;
     padding-top: 1%;
     padding-bottom: 1%;
@@ -391,7 +391,7 @@ div.long-button-info {
     background-color: #8B2635;
     color: #FFF3B0;
     float: left;
-    display: inline-block;
+    /* display: inline-block; */
     width: 92%;
     padding-top: 0.5%;
     padding-bottom: 1%;
@@ -411,7 +411,7 @@ div.dropdown {
 }
 div.dropdown-button {
     float: left;
-    display: inline-block;
+    /* display: inline-block; */
     width: 96.5%;
     padding-top: 1%;
     padding-bottom: 1%;
