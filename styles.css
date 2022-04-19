@@ -583,6 +583,7 @@ div.crumb {
     border-radius: 10px;
     margin-right: 0.75%;
     float: left;
+    font-size: 1.5vw;
 }
 div.crumb:hover {
     background-color: #FFF3B0;
