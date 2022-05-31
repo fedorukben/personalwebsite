@@ -653,7 +653,7 @@ div.tstm-carousel {
     overflow: hidden;
 }
 ul.tstm-carousel-slides {
-    width: 600%; /* Increase this by 100 */
+    width: 700%; /* Increase this by 100 */
     left: 0;
     padding-left: 0;
     padding-top: 1em;
@@ -666,7 +666,7 @@ ul.tstm-carousel-slides {
     transition: transform .5s;
 }
 ul.tstm-carousel-slides li {
-    width: 16.6667%; /* this is 1/n */
+    width: 14.28571%; /* this is 1/n */
     position: relative;
     float: left;
 }
@@ -707,7 +707,7 @@ div.tstm-carousel div.tstm-carousel-nav {
     bottom: 1em;
     position: absolute;
     left: 50%;
-    margin-left: -78px; /* 13 * n */
+    margin-left: -91px; /* 13 * n */
 }
 div.tstm-carousel input {
     display: none;
@@ -728,19 +728,22 @@ div.tstm-carousel div.tstm-carousel-nav label {
     transform: translateX(0%); /* k/n */ 
 }
 #radio-2:checked ~ ul.tstm-carousel-slides {
-    transform: translateX(-16.66667%); /* k/n */ 
+    transform: translateX(-14.28571%); /* k/n */ 
 }
 #radio-3:checked ~ ul.tstm-carousel-slides {
-    transform: translateX(-33.33333%); /* k/n */ 
+    transform: translateX(-28.57143%); /* k/n */ 
 }
 #radio-4:checked ~ ul.tstm-carousel-slides {
-    transform: translateX(-50%); /* k/n */ 
+    transform: translateX(-42.85714%); /* k/n */ 
 }
 #radio-5:checked ~ ul.tstm-carousel-slides {
-    transform: translateX(-66.66667%); /* k/n */ 
+    transform: translateX(-57.14286%); /* k/n */ 
 }
 #radio-6:checked ~ ul.tstm-carousel-slides {
-    transform: translateX(-83.33333%); /* k/n */ 
+    transform: translateX(-71.42857%); /* k/n */ 
+}
+#radio-7:checked ~ ul.tstm-carousel-slides {
+    transform: translateX(-85.71429%); /* k/n */ 
 }
 /* One of these per page with comma */
 div.tstm-carousel #radio-1:checked ~ div.tstm-carousel-nav label#dotForRadio-1,
@@ -748,7 +751,8 @@ div.tstm-carousel #radio-2:checked ~ div.tstm-carousel-nav label#dotForRadio-2,
 div.tstm-carousel #radio-3:checked ~ div.tstm-carousel-nav label#dotForRadio-3,
 div.tstm-carousel #radio-4:checked ~ div.tstm-carousel-nav label#dotForRadio-4,
 div.tstm-carousel #radio-5:checked ~ div.tstm-carousel-nav label#dotForRadio-5,
-div.tstm-carousel #radio-6:checked ~ div.tstm-carousel-nav label#dotForRadio-6 {
+div.tstm-carousel #radio-6:checked ~ div.tstm-carousel-nav label#dotForRadio-6,
+div.tstm-carousel #radio-7:checked ~ div.tstm-carousel-nav label#dotForRadio-7 {
     background: #171738;
 }
 @media (max-width: 796px) {
