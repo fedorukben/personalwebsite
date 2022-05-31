@@ -641,6 +641,136 @@ div.section a div.hovertip:hover:before {
     background: #FFF3B0;
 }
 
+/* TSTM */
+div.tstm-carousel {
+    background: #8B2635;
+    text-align: center;
+    padding: 4em 0;
+    height: 10em;
+    max-width: 750px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+ul.tstm-carousel-slides {
+    width: 600%; /* Increase this by 100 */
+    left: 0;
+    padding-left: 0;
+    padding-top: 1em;
+    overflow: hidden;
+    list-style: none;
+    position: relative;
+    -webkit-transition: transform .5s;
+    -moz-transition: transform .5s;
+    -o-transition: transform .5s;
+    transition: transform .5s;
+}
+ul.tstm-carousel-slides li {
+    width: 16.6667%; /* this is 1/n */
+    position: relative;
+    float: left;
+}
+div.tstm-carousel li p {
+    margin-top: 0;
+}
+div.tstm-carousel li q {
+    max-width: 90%;
+    margin: auto;
+    color: #FFF3B0;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+div.tstm-carousel li img {
+    width: 3em;
+    height: 3em;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: -1.5em;
+    margin-right: 0.5em;
+    vertical-align: middle;
+    border: 7px solid #171738;
+}
+div.tstm-carousel li img:hover {
+    border: 7px solid #FFF3B0;
+}
+div.tstm-carousel li span.tstm-carousel-author,
+div.tstm-carousel li span.tstm-carousel-name-btn {
+    margin-top: 0.5em;
+    font-size: 1.2em;
+    color: #FFF3B0;
+    display: block;
+}
+div.tstm-carousel div.tstm-carousel-nav {
+    display: block;
+    list-style: none;
+    text-align: center;
+    bottom: 1em;
+    position: absolute;
+    left: 50%;
+    margin-left: -78px; /* 13 * n */
+}
+div.tstm-carousel input {
+    display: none;
+}
+div.tstm-carousel div.tstm-carousel-nav label {
+    float: left;
+    margin: 6px;
+    display: block;
+    height: 10px;
+    width: 10px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: solid 2px #171738;
+    font-size: 0;
+}
+/* One of these per page */
+#radio-1:checked ~ ul.tstm-carousel-slides {
+    transform: translateX(0%); /* k/n */ 
+}
+#radio-2:checked ~ ul.tstm-carousel-slides {
+    transform: translateX(-16.66667%); /* k/n */ 
+}
+#radio-3:checked ~ ul.tstm-carousel-slides {
+    transform: translateX(-33.33333%); /* k/n */ 
+}
+#radio-4:checked ~ ul.tstm-carousel-slides {
+    transform: translateX(-50%); /* k/n */ 
+}
+#radio-5:checked ~ ul.tstm-carousel-slides {
+    transform: translateX(-66.66667%); /* k/n */ 
+}
+#radio-6:checked ~ ul.tstm-carousel-slides {
+    transform: translateX(-83.33333%); /* k/n */ 
+}
+/* One of these per page with comma */
+div.tstm-carousel #radio-1:checked ~ div.tstm-carousel-nav label#dotForRadio-1,
+div.tstm-carousel #radio-2:checked ~ div.tstm-carousel-nav label#dotForRadio-2,
+div.tstm-carousel #radio-3:checked ~ div.tstm-carousel-nav label#dotForRadio-3,
+div.tstm-carousel #radio-4:checked ~ div.tstm-carousel-nav label#dotForRadio-4,
+div.tstm-carousel #radio-5:checked ~ div.tstm-carousel-nav label#dotForRadio-5,
+div.tstm-carousel #radio-6:checked ~ div.tstm-carousel-nav label#dotForRadio-6 {
+    background: #171738;
+}
+@media (max-width: 796px) {
+    div.tstm-carousel {
+        height: 8.5em;
+    }
+}
+@media (max-width: 480px) {
+    div.tstm-carousel li p {
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
+    div.tstm-carousel li q {
+        font-size: 1em;
+    }
+    div.tstm-carousel li img {
+        width: 2em;
+        margin-left: -1em;
+        margin-right: 0.25em;
+    }
+}
+
 /* NEWS */
 .tcontainer {
   width: 100%;
