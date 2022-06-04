@@ -73,6 +73,14 @@ iframe.cv {
     height: 68.58823529vw;
     /* Above is calculated by (11/8.5)*53vw for letter size props */
 }
+iframe.resume {
+    background-color: #B9314F;
+    margin-left: 23.5vw;
+    margin-right: 23.5vw;
+    width: 53vw;
+    height: 68.58823529vw;
+    /* Above is calculated by (11/8.5)*53vw for letter size props */
+}
 
 ul {
     text-align: center;
