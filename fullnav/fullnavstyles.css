@@ -86,9 +86,9 @@ ul.menu-item-hover li a {
     text-align: center;
 }
 
-ul.menu-item-hover:hover li a {
+/* ul.menu-item-hover:hover li a {
     opacity: 0;
-}
+} */
 
 ul.menu-item-hover li a:hover {
     transform: scale(2,2);
